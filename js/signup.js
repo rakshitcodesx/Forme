@@ -43,9 +43,5 @@ document
 
         return;
     }
-
-    alert(
-        "Account Created Successfully"
-    );
-
+     window.location.href = "gender.html";
 });

@@ -5,11 +5,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Create Account</title>
+<title>Log In</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
-<link rel="stylesheet" href="../css/signup.css">
+<link rel="stylesheet" href="../css/login.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -19,75 +19,55 @@
 
 <div class="container">
 
-    <!-- LEFT SIDE -->
-
     <div class="left-panel">
 
         <div class="overlay"></div>
 
         <div class="branding">
 
-            <h1>Forme</h1>
+            <h1>Welcome Back</h1>
 
             <p>
-                Build your AI-powered wardrobe and get outfit recommendations tailored just for you.
+                Access your wardrobe and discover today's perfect outfit.
             </p>
 
         </div>
 
     </div>
 
-    <!-- RIGHT SIDE -->
-
     <div class="right-panel">
 
         <div class="form-card">
 
-            <h2>Create Account</h2>
+            <h2>Log In</h2>
 
             <p class="subtitle">
-                Start building your personal AI stylist.
+                Sign in to continue.
             </p>
 
-            <form id="signupForm">
-
-                <input
-                    type="text"
-                    placeholder="Full Name"
-                    id="fullName">
+            <form id="loginForm">
 
                 <input
                     type="email"
-                    placeholder="Email Address"
-                    id="email">
+                    id="email"
+                    placeholder="Email Address">
 
                 <div class="password-wrapper">
 
                     <input
                         type="password"
-                        placeholder="Password"
-                        id="password">
+                        id="password"
+                        placeholder="Password">
 
                     <span id="togglePassword">👁</span>
 
                 </div>
 
-                <div class="password-wrapper">
-
-                    <input
-                        type="password"
-                        placeholder="Confirm Password"
-                        id="confirmPassword">
-
-                    <span id="toggleConfirm">👁</span>
-
-                </div>
-
                 <button
                     type="submit"
-                    class="signup-btn">
+                    class="login-btn">
 
-                    Create Account
+                    Log In
 
                 </button>
 
@@ -101,12 +81,23 @@
                 Continue with Google
             </button>
 
+            <div class="signup-link">
+
+                Don't have an account?
+
+                <a href="signup.html">
+                    Sign Up
+                </a>
+
+            </div>
+
         </div>
 
     </div>
 
 </div>
 
-<script src="../js/signup.js"></script>
+<script src="../js/login.js"></script>
+
 </body>
 </html>
