@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Create Account</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="stylesheet" href="css/signup.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LEFT SIDE -->
+
+    <div class="left-panel">
+
+        <div class="overlay"></div>
+
+        <div class="branding">
+
+            <h1>Fashion Styler</h1>
+
+            <p>
+                Build your AI-powered wardrobe and get outfit recommendations tailored just for you.
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="right-panel">
+
+        <div class="form-card">
+
+            <h2>Create Account</h2>
+
+            <p class="subtitle">
+                Start building your personal AI stylist.
+            </p>
+
+            <form id="signupForm">
+
+                <input
+                    type="text"
+                    placeholder="Full Name"
+                    id="fullName">
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                    id="email">
+
+                <div class="password-wrapper">
+
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        id="password">
+
+                    <span id="togglePassword">👁</span>
+
+                </div>
+
+                <div class="password-wrapper">
+
+                    <input
+                        type="password"
+                        placeholder="Confirm Password"
+                        id="confirmPassword">
+
+                    <span id="toggleConfirm">👁</span>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="signup-btn">
+
+                    Create Account
+
+                </button>
+
+            </form>
+
+            <div class="divider">
+                OR
+            </div>
+
+            <button class="google-btn">
+                Continue with Google
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/signup.js"></script>
+
+</body>
+</html>

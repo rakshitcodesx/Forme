@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* LEFT */
+
+.left-panel{
+
+    flex:1;
+
+    position:relative;
+
+    background:
+    url("https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2000");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    rgba(0,0,0,0.55);
+}
+
+.branding{
+
+    position:absolute;
+
+    z-index:2;
+
+    color:white;
+
+    bottom:80px;
+    left:60px;
+
+    max-width:500px;
+}
+
+.branding h1{
+
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.branding p{
+
+    font-size:1.2rem;
+    line-height:1.8;
+}
+
+/* RIGHT */
+
+.right-panel{
+
+    width:550px;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+}
+
+.form-card{
+
+    width:80%;
+}
+
+.form-card h2{
+
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.subtitle{
+
+    color:gray;
+    margin-bottom:30px;
+}
+
+form{
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input{
+
+    width:100%;
+
+    padding:16px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    font-size:16px;
+}
+
+.password-wrapper{
+    position:relative;
+}
+
+.password-wrapper span{
+
+    position:absolute;
+
+    right:15px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+}
+
+.signup-btn{
+
+    background:black;
+
+    color:white;
+
+    border:none;
+
+    padding:16px;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    cursor:pointer;
+}
+
+.divider{
+
+    text-align:center;
+
+    margin:25px 0;
+
+    color:gray;
+}
+
+.google-btn{
+
+    width:100%;
+
+    padding:16px;
+
+    background:white;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    cursor:pointer;
+}
+
+@media(max-width:1000px){
+
+    .left-panel{
+        display:none;
+    }
+
+    .right-panel{
+        width:100%;
+    }
+
+}

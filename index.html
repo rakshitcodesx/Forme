@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fashion Styler</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+.hero{
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45)
+    ),
+    url("https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=2000");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+@media(max-width:768px){
+
+    .hero-title{
+        white-space:normal;
+        font-size:3rem;
+        line-height:1.1;
+    }
+
+}
+</style>
+
+</head>
+
+<body>
+
+<section class="hero flex items-center justify-center">
+
+    <div class="text-center px-6 w-full">
+
+        <h1
+            class="hero-title
+                   text-white
+                   font-extrabold
+                   text-4xl md:text-5xl lg:text-7xl
+                   whitespace-nowrap
+                   mb-8">
+
+            Curating Outfits Only You Can Wear.
+        </h1>
+
+        <p
+            class="text-white/90
+                   text-xl
+                   md:text-2xl
+                   mb-12">
+
+            AI powered outfits made for you.
+        </p>
+
+        <div
+            class="flex
+                   flex-col
+                   md:flex-row
+                   justify-center
+                   items-center
+                   gap-6">
+
+            <a href="signup.html">
+    <button
+        class="bg-white text-black px-16 py-4 rounded-2xl font-semibold w-80 hover:scale-105 transition">
+        Get Started
+    </button>
+</a>
+
+            </button>
+
+            <button
+                class="border
+                       border-white
+                       text-white
+                       px-16
+                       py-4
+                       rounded-2xl
+                       font-semibold
+                       w-72
+                       hover:bg-white
+                       hover:text-black
+                       transition">
+
+                Log In
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
