@@ -4,25 +4,216 @@
     box-sizing:border-box;
 }
 
+
 body{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Poppins',sans-serif;
 }
 
-.hero-section{
-    position:relative;
 
-    background-image:
-    url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f");
 
-    background-size:cover;
-    background-position:center;
+/* LOGO INTRO AREA */
+
+.brand-title{
+
+    height:120px;
+
+    width:100%;
+
+    background:black;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
 }
 
-.overlay{
-    position:absolute;
 
-    inset:0;
+
+#forme-logo{
+
+    display:flex;
+
+    color:white;
+
+    font-size:70px;
+
+    font-weight:700;
+
+    letter-spacing:22px;
+
+}
+
+
+
+#forme-logo span{
+
+    display:inline-block;
+
+    animation:
+    logoMorph 2s forwards;
+
+}
+
+
+
+/* stagger the letters */
+
+#forme-logo span:nth-child(1){
+animation-delay:0s;
+}
+
+
+#forme-logo span:nth-child(2){
+animation-delay:.15s;
+}
+
+
+#forme-logo span:nth-child(3){
+animation-delay:.30s;
+}
+
+
+#forme-logo span:nth-child(4){
+animation-delay:.45s;
+}
+
+
+#forme-logo span:nth-child(5){
+animation-delay:.60s;
+}
+
+
+
+
+
+@keyframes logoMorph{
+
+
+0%{
+
+font-family:'Playfair Display';
+
+transform:
+translateY(-40px)
+scale(1.4)
+rotate(-10deg);
+
+filter:blur(10px);
+
+opacity:0;
+
+}
+
+
+
+20%{
+
+font-family:'Bebas Neue';
+
+transform:
+translateY(10px)
+scale(.9)
+rotate(5deg);
+
+filter:blur(2px);
+
+opacity:1;
+
+}
+
+
+
+40%{
+
+font-family:'Pacifico';
+
+transform:
+scale(1.15)
+rotate(-4deg);
+
+}
+
+
+
+60%{
+
+font-family:'Orbitron';
+
+transform:
+scale(.95)
+rotate(3deg);
+
+}
+
+
+
+80%{
+
+font-family:'Montserrat';
+
+transform:
+scale(1.05)
+rotate(0);
+
+}
+
+
+
+90%{
+
+font-family:'Cormorant Garamond';
+
+transform:
+scale(1.02);
+
+}
+
+
+
+100%{
+
+font-family:'Cormorant Garamond';
+
+font-weight:700;
+
+transform:
+translateY(0)
+scale(1)
+rotate(0);
+
+filter:blur(0);
+
+opacity:1;
+
+}
+
+}
+
+
+
+/* HERO */
+
+.hero{
+margin-top:-1px;
+}  
+
+.hero{
+    min-height:100vh;
 
     background:
-    rgba(0,0,0,0.55);
+    linear-gradient(
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.45)
+    ),
+    url("https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?q=80&w=2000");
+
+
+    background-size:cover;
+
+    background-position:center;
+
 }
